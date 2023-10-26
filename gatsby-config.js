@@ -16,7 +16,9 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-netlify`,
+    'gatsby-plugin-netlify',
     'gatsby-plugin-image',
+    'gatsby-plugin-smoothscroll',
+    'gatsby-plugin-react-helmet',
   ],
 }

@@ -9,11 +9,15 @@ main{
     margin-bottom: 0px !important; */
     display: grid;
     grid-gap: 40px;
-    margin-inline: 20dvw;
-    /* background-color: rgba(54, 54, 54, 0.021); */
+    /* margin-inline: 20dvw; */
     box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 121px 2px;
-    padding-inline: 30px;
     transition: 1s;
+}
+.line-break{
+    width: 90%;
+    background-color: black;
+    height: 1px;
+    justify-self: center;
 }
 @media (max-width: 600px) {
     main{
@@ -22,66 +26,75 @@ main{
 }
 @media (min-width: 600px) {
     main{
-        margin-inline: 8dvw;
+        margin-inline: 6dvw;
     }
 }
 @media (min-width: 800px) {
     main{
-        margin-inline: 14dvw;
+        margin-inline: 10dvw;
     }
 }
 @media (min-width: 1000px) {
     main{
-        margin-inline: 20dvw;
+        margin-inline: 16dvw;
     }
 }
 @media (min-width: 1200px) {
     main{
-        margin-inline: 22dvw;
+        /* margin-inline: 17dvw; */
     }
 }
 @media (min-width: 1300px) {
     main{
-        margin-inline: 25dvw;
+        margin-inline: 18dvw;
     }
 }
 @media (min-width: 1600px) {
     main{
-        margin-inline: 28dvw;
+        margin-inline: 20dvw;
     }
 }
 .headline{
-
+    display: grid;
+    justify-content: center;
+    padding-inline: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 .headline h1{
-    background-color: rgba(0, 0, 0, 0.13);
-    border: solid 2px black;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    font-size: 40px;
+    justify-self: center;
+    text-align: center;
+    margin: 30px 0 60px 0;
 }
 .whats_the_catch{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    border: solid 2px black;
+    /* background-color: rgba(0, 0, 0, 0.1); */
 }
 .catch_CTA{
     display: grid;
     justify-content: center;
     grid-template-rows: 5rem;
-    border: solid 2px black;
 }
 .catch_CTA h2{
     align-self: center;
     justify-self: center;
+    background-color: transparent;
 }
 .scarecity{
     display: grid;
-
+    background-color: transparent;
     /* grid-template-columns: 2fr auto; */
     grid-template-areas: 'text text text text' 'text text text text' 'space btn btn space2 ';
 }
 .scarecity p{
     grid-area: text;
     text-align: center;
+    font-size: 20px;
+    background-color: transparent;
 }
 .redeem_btn{
     grid-area: btn;
@@ -94,6 +107,9 @@ main{
     align-self: center;
     height: auto;
     transition: 0.7s;
+    text-decoration: none;
+    color: black;   
+    margin-bottom: 30px;
 }
 .redeem_btn:hover{
     background-color: black;
@@ -110,46 +126,162 @@ main{
     align-self: center;
     justify-self: center;
     text-align: center;
+    font-size: 22px;
     /* padding-inline: auto; */
 }
 .catch_list ul {
-    /* margin-left: 0px; */
     padding-left: 14px;
+    display: grid;
+    /* margin-left: 0px; */
     /* list-style-position: inside; */
-    /* display: grid; */
-    /* gap: 2px; */
+    gap: 10px;
+    font-size: 20px;
 }
 
 
 .solution{
     display: grid;
-    gap: 20px;
+    padding-inline: 50px;
 }
-.solution_webdev{
-    border: solid 2px black;
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-}
+
+
 .title-wrapper{
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
+    margin: 10px 0 40px 0;
 }
-.paragraph-wrapper{
+.solution_webdev{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    /* grid-template-columns: auto 1fr; */
 }
 .gatsby-logo{
     height: 40px;
     width: 40px;
 }
+
+
+.paragraph-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    font-size: 20px;
+    gap: 16px;
+}
+.paragraph-wrapper p{
+    font-size: 22px;
+}
 .code-img{
     height: auto;
-    width: auto;
-}
-.solution_gmb{
-    border: solid 2px black;
+    width: 300px;
+    border-radius: 3px;
 }
 
+
+.insights-wrapper{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    font-size: 22px;
+}
+.insights-logo{
+    width: 160px;
+}
+
+
+.solution_prismic{
+    /* border: solid 2px black; */
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.solution_prismic p{
+    font-size: 22px;
+}
+.prismic-img{
+    height: auto;
+    width: 160px;
+}
+
+
+.solution_email{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: center;
+}
+.solution_email p{
+    font-size: 22px;
+}
+.email-img{
+    width: 180px;
+    border-radius: 6px;
+}
+
+
+.solution_GMB{
+    /* border: solid 2px black; */
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 40px;
+}
+.gmb-img{
+    height: auto;
+    width: 160px;
+}
+
+
+.audience{
+    padding-inline: 50px;
+    height: 96dvh;
+    display: grid;
+    align-content: center;
+}
+.audience p{
+    justify-self: center;
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+.audience h3{
+    justify-self: center;
+    font-size: 30px;
+}
+
+
+.identity{
+    padding-inline: 50px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0 80px 0;
+}
+.benjamin-img{
+    width: 220px;
+    border: solid black 3px;
+    border-radius: 3px;
+}
+
+#calendly{
+    height: 50dvh;
+    display: grid;
+    align-items: center;
+    margin-top: 40px;
+}
+#calendly h2{
+    justify-self: center;
+}
+
+.solution-block{
+    /* margin-bottom: 40px; */
+    /* border: solid 2px black; */
+    margin-bottom: 60px;
+}
